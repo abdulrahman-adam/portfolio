@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+
+        <div class="divPost">
+
+            <div class="formContact mt-6">
+                <h1 class='text-center'>Proposer un projet</h1>
+                <div class="formPost">
+                    {{form(formPost)}}
+                </div>
+                <p class"text-center"><a href="{{path('app_personal')}}">Retourner à la page d'accueil</a></p>
+            </div>
+
+            <div class="propos">
+                <div class="img">
+                    <img src="{{asset('img/upload/bonjour.jpg')}}" alt="L'image d'A propos">
+                </div>
+
+
+                <div class="proposPersonal">
+
+                    <h1>Abdulrahman Adam Abdulrahman&nbsp;<a href="{{path('app_personal')}}"><i class="fa-regular fa-heart"></i></a></h1>
+                    <p>Développeur Web Et Web Mobile Junior Js/React/Sql/Php/Symfony</p>
+
+                    <div class="proposTarif">
+                        <h2>Tarif indicatif</h2>
+                        <h3>200€/jour</h3>
+                    </div>
+
+                    <hr>
+                    <p>Abdulrahman répond en 3 heure en moyenne.</p>
+                </div>
+            </div>
+        </div>
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+
+
+    <h1 class="text-center">Bienvenue sur le profil  d'Abdulrahman !</h1>
+    <div class="parentPersonal">
+        
+        <div class="personalImage">
+            <img src="{{asset('img/upload/bonjour.jpg')}}" alt="l'image de test">
+            <p>Développeur web et web mobile junior&nbsp;<a href="{{path('app_propos')}}"><i class="fa-regular fa-heart"></i></a></p>
+        </div>
+
+        <div class="all">
+
+            <div class="numberOne">
+            
+                <div class="information">
+                    <h1>Abdulrahman Adam Abdulrahman&nbsp;<a href="{{path('app_propos')}}"><i class="fa-regular fa-heart"></i></a></h1>
+                    <p>Développeur Web Et Web Mobile Junior Js/React/Sql/Php/Symfony</p>
+                </div>
+
+                <div class="proposeProject">
+                    <p><a href="{{path('app_post')}}">Proposer un Projet</a></p>
+                    <p>La mission ne démarrera que si vous acceptez le devis d'Abdulrahman.</p>
+                </div>
+            </div>
+
+            
+            <div class="numberTow">
+                <div class="tarifElement text-center">
+
+                    <div class="tarif">
+                        <h2>Tarif indicatif</h2>
+                        <h3>200€/jour</h3>
+                    </div>
+
+                    <div class="tarifSister">
+                        <p>ce tarif est indicatif. Chaque freelance vous enverra un devis adapté à votre demande.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="consulter">
+                    <a href="{{path('app_propos')}}">Consulter le niveau d'expérience, la disponibilité de reponse de Abdulrahman</a>
+                </div>
+
+            
+                <div class="voirDetail text-center">
+                    <p>Le Coordonnées du dévéloppeur</p>
+                    <p><button id="button" class="btn btn-primary">Voir Son Coordonnées</button></p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+        <div class="firstSection">
+        
+            <div class="localisation">
+            
+                <h1 class="test-center">Localisation et déplacement</h1>
+                <h2><span><i class="fa-solid fa-location-dot"></i></span>&nbsp;&nbsp;Localisation</h2>
+                <p>MONTGERON(91)</p>
+
+                <h2><span><i class="fa-solid fa-person-walking"></i></span>&nbsp;&nbsp;Peut travailler dans vos locaux à</h2>
+                <p>Paris et île-de-france</p>
+            </div>
+
+            <div class="competence">
+                <h1>Competences(10)</h1>
+                <p>JavaScript</p>
+                <hr>
+                <p>PHP</p>
+                <hr>
+                <p>React</p>
+                <p><a href="{{path('app_propos')}}">Voir toutes les competences</a></p>
+            </div>
+
+
+            <div class="mots">
+                <h1>Abdulrahman en quelques mots</h1>
+                <p>
+                    Actuellement en fin de la formation programmeur <u>HTML, CSS, Bootstrap, JavaScript, Mysql, NodeJs, PHP,  React, Wordpress et Symfony 6 via ALT-RH colsulting</u>.<span id="dots">....</span><span id="more"> J'ai  fini ma formation je vais passer l'examin au juillet. Je suis donc disponible pour des missions de création, maintenance et refonte de site en <b>HTML5, CSS3, Bootstrap, JavaScript, Mysql, NodeJs, PHP, React, Wordpress et Symfony 6</b>. Au terme de ma formation (juin 2022) je serai également capable de programmer en Languges j'ai déclaré.</span>
+                </p>
+                <p><button id='read' onclick='read()' class='btn btn-primary'>Lire plus</button></p>
+                <p><a href="{{path('app_propos')}}">Consultez la description complète de Abdulrahman</a></p>
+            </div>
+
+        </div>
+
+        <div class="secondSection">
+            <div class="langugs">
+                <h1>Languges</h1>
+                <p><a href="{{path('app_propos')}}">Consultez les langues maîtrisées par Abdulrahman</a></p>
+            </div>
+
+            <div class="category">
+                <h1>Catégories</h1>
+                <p>Développeur Web Back-end</p>
+                <p>Développeur Web Front-end</p>
+                <p>Développeur Mobile</p>
+            </div>
+
+
+            <div class="profil">
+            <h1>Partager son profil</h1>
+                <span><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></span>
+                <span><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></span>
+                <span><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></span>
+            </div>
+
+        </div>
+
+           <div id="detail">
+            <div class="detailElement">
+                <p><b>Téléphone</b>: 0766397122</p>
+                <p><b>Adresse</b>: 117 ter avenue de la république 91320 MONTGERON</p>
+                <p><b>E-mail</b>: naireick@gmail.com</p>
+                <p><b><button id="retourner" class="btn btn-primary">Retourner</button></p>
+            </div>
+        </div>
+
+
+{% endblock %}
+
+    

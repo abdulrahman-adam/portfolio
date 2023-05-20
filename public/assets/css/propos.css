@@ -1,0 +1,92 @@
+/* La section d'image d'Apropos */
+.propos{
+    width: 666px;
+    margin: 22px auto;
+    padding: 22px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    text-align: center;
+}
+
+.img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.proposPersonal p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* La section proposTarif */
+
+.proposTarif{
+    width: 210px;
+    background-color: rgb(53, 198, 242);
+    height: 95px;
+    color: white;
+    border-radius: 7px;
+    /* text-align: center; */
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* La section du canvas */
+.canvas{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#myChart{
+    margin: 66px;
+    padding: 32px;
+}
+
+
+#myChart1{
+    margin: 66px;
+    padding: 32px;
+}
+
+/* La section d'unicode */
+.unicode{
+    font-size: 33px;
+    font-weight: bold;
+    border-radius: 6px;
+    color: green;
+}
+
+.unicode1{
+    font-size: 33px;
+    font-weight: bold;
+    color: rgb(234, 237, 27);
+}
+
+.divThree p{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.divThree {
+    display: flex;
+    justify-content: space-around; 
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: 52px;
+}
+
+/* La section de La page Post */
+.formContact{
+    width: 666px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    padding: 33px;
+}
+.form-floating{
+    margin: 18px 0;
+}
+
+.divPost{
+    display: flex;
+    align-items: center;
+}

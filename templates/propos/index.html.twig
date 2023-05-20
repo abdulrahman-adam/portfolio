@@ -1,0 +1,118 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos!{% endblock %}
+
+
+
+{% block body %}
+    <div class="divPost">
+        <div class="formContact">
+            <h1 class="text-center">Consultez les langues</h1>
+            {{form(formPropos)}}
+        </div>
+
+    
+        <div class="propos">
+            <div class="img">
+                <img src="{{asset('img/upload/bonjour.jpg')}}" alt="L'image d'A propos">
+            </div>
+
+
+            <div class="proposPersonal">
+
+                <h1>Abdulrahman Adam Abdulrahman&nbsp;<a href="{{path('app_personal')}}"><i class="fa-regular fa-heart"></i></a></h1>
+                <p>Développeur Web Et Web Mobile Junior Js/React/Sql/Php/Symfony</p>
+
+                <div class="proposTarif">
+                    <h2>Tarif indicatif</h2>
+                    <h3>200€/jour</h3>
+                </div>
+
+                <hr>
+                <p>Abdulrahman répond en 3 heure en moyenne.</p>
+            </div>
+        </div>
+
+    </div>
+
+        <div class="proposCompetence">
+
+            <h1 class="text-center">toutes les competences(11)</h1>
+            <div class="divThree">
+            
+                <div class="divOne">
+                    <p>HTML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; &#8212; &#8212; &#8212;<span class="unicode1"> &#8212;</span></span></p>
+                    <p>CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; &#8212; &#8212; <span class="unicode1">&#8212; &#8212;</span></span></p>
+                    <p>Bootstrap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; &#8212; &#8212; <span class="unicode1">&#8212; &#8212;</span></span></p>
+                    <p>JavaScript&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; &#8212; &#8212; <span class="unicode1">&#8212; &#8212;</span></span></p>
+                    <p>Mysql&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; &#8212; &#8212; <span class="unicode1">&#8212; &#8212;</span></span></p>
+                </div>
+                <div class="divTow">
+                    <p>Nodejs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; &#8212; &#8212; <span class="unicode1">&#8212; &#8212;</span></span></p>
+                    <p>React&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; &#8212; &#8212; <span class="unicode1">&#8212; &#8212;</span></span></p>
+                    <p>PHP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; &#8212; &#8212; <span class="unicode1">&#8212; &#8212;</span></span></p>
+                    <p>Wordpress&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; &#8212; &#8212; <span class="unicode1">&#8212; &#8212;</span></span></p>
+                    <p>Symfony&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; &#8212; &#8212; &#8212; <span class="unicode1">&#8212;</span></span></p>
+                    <p>Python&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="unicode">&#8212; <span class="unicode1">&#8212; &#8212; &#8212; &#8212;</span></span></p>
+                </div>
+            </div>
+        </div>
+        {# La section charte graphique #}
+    <h1 class="text-center">La charte graphique</h1>
+    <div class="canvas">
+        <div class="canvas1">
+            <canvas id="myChart" width="400" height="273"></canvas>
+            <p class="text-center">La charte graphique en pie</p>
+
+        </div>
+
+        <div class="canvas2">
+            <canvas id="myChart1" width="500" height="300"></canvas>
+            <p class="text-center">La charte graphique en bar</p>
+        </div>
+
+    </div>
+
+   
+{% endblock %}
+
+ {% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+
+
+   {# La section de charte graphique #}
+  <script>
+  {# La section de charte graphique pie #}
+        let canvasEle = document.getElementById('myChart');
+        let chartEle = new Chart(canvasEle, {
+            type: 'pie',
+            data: {
+                labels: ["HTML", "CSS", "Bootstrap", "Javascript", "Mysql", "NodeJs", "React", "PHP", "Wordpress", "Symfony", "Python"],
+                datasets: [{
+                    label: "La totale des expériences 5, et l'expérience a existé",
+                    data: [4.2, 3.4, 4.0, 3.2, 3.9, 3.1, 3.3, 4.0, 3.5, 4.1, 1.7],
+                    backgroundColor: ["Red", "Green", "Yellow", "Orange", "Purple", "Gray", "Black", "Blue", "Coffee", "Cyan", "Pear"],
+                }]
+            }
+        });
+
+        {# La section de charte graphique line#}
+
+        let canvasEle1 = document.getElementById('myChart1');
+        let chartEle1 = new Chart(canvasEle1, {
+            type: 'bar',
+            data: {
+                labels: ["HTML", "CSS", "Bootstrap", "Javascript", "Mysql", "NodeJs", "React", "PHP", "Wordpress", "Symfony", "Python"],
+                datasets: [{
+                    label: "La totale des expériences 5, et l'expérience a existé ",
+                    data: [4.6, 3.4, 4.0, 3.2, 3.9, 3.1, 3.3, 4.0, 3.5, 4.1, 1.7],
+                    backgroundColor: ["Red", "Green", "Yellow", "Orange", "Purple", "Gray", "Black", "Blue", "Coffee", "Cyan", "Pear"],
+                }]
+            }
+        });
+    
+    </script>
+{% endblock %}
+
+   

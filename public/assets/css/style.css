@@ -1,0 +1,256 @@
+/* la section du forrm contact */
+
+.formContact{
+    width: 444px;
+    margin: 5px auto;
+}
+
+/* La section de la page personal */
+/* 1: La section des eléments  */
+
+    .parentPersonal{
+        width:auto;
+        height: 444px;
+        display: flex;
+        padding: 44px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        margin: 44px auto; 
+    }
+    /* La section du numberOne */
+    .numberOne{
+        display: flex;
+        margin-right: 44px;
+        margin-bottom: 55px;
+    }
+    
+    /* La section du numberTow */
+    .numberTow{
+        display: flex;
+    }
+   
+    
+
+    /* La section de L'image */
+    .personalImage>img{
+        width:222px;
+        border-radius: 55px;
+        margin-top: 7px;
+        margin-left: 29px;
+    }
+    .personalImage>p{
+       margin-top: 33px;
+       font-size: 15px;
+       font-weight: bold;
+    }
+
+
+    /* La section de proposer un projet */
+
+    .proposeProject{
+        width: auto;
+        height: 111px;
+        text-align: center;
+        margin-left: 77px;
+    }
+
+    .proposeProject p{
+       font-size: 16px;
+       font-weight: bold;
+    }
+
+    .proposeProject a{
+        background-color: rgb(53, 198, 242);
+        border-radius: 6px;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    /* La section d'information */
+    .information{
+        width: 777px;
+        height: 120px;
+        text-align: center;
+        margin-left: 77px;
+    }
+     .information h1{
+       font-weight: bold;
+       color: rgb(97, 86, 86);
+    }
+
+    .information p{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    /* La section du tarif indicatif */
+
+    .tarif{
+        width: 230px;
+        background-color: rgb(53, 198, 242);
+        height: 95px;
+        color: white;
+        border-radius: 7px;
+        text-align: center;
+        cursor: pointer;
+        margin-left: 3px;
+
+    }
+
+   
+    .tarifElement{
+        width: 280px;
+        margin-left: 77px;
+    }
+
+    .tarifElement div{
+        margin: 0 auto;
+    }
+
+
+    .tarifSister{
+        width: 280px;
+        height: 111px;
+        border-radius: 7px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        font-size: 18px;
+        margin-top: 8px;
+        display: none;
+    }
+
+   
+    /* La section de consulter */
+
+    .consulter{
+        width: 444px;
+        height: 72px;
+        text-align: center;
+        font-size: 22px;
+        margin-right: 66px;
+        margin:0 133px;
+    }
+
+    .consulter>a{
+      text-decoration: none;
+    }
+    .consulter>a:hover{
+        text-decoration: underline;
+    }
+    /* La section de voir Coordonnées */
+
+    #detail{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(240, 235, 235);
+        display: none;
+    }
+    .detailElement{
+        width: 777px;
+        height: 222px;
+        background-color: white;
+        border-radius: 7px;
+        text-align: center;
+        margin: 111px auto;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        font-size: 25px;
+    }
+    /* La section localisation */
+
+    .localisation{
+        width: 444px;
+        height: 333px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        margin-top: 88px;
+        margin-left: 40px;
+        padding: 0 33px;
+    }
+
+    .localisation p{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .localisation h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* La section des langugs */
+    .langugs{
+        width: 444px;
+        height: 222px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        margin-top: 88px;
+        margin-left: 40px;
+        padding: 0 33px;
+    }
+
+    .langugs a{
+        font-size: 20px;
+    }
+    /* La section des competence */
+    .competence{
+        width: 444px;
+        height: 333px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        margin-top: 88px;
+        margin-left: 40px;
+        padding: 0 33px;
+    }
+
+    .competence a{
+        font-size: 20px;
+    }
+
+    /* La sectionde quelques mots */
+
+    .mots{
+        width: 888px;
+        height: 333px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        margin-top: 88px;
+        margin-left: 40px;
+        font-size: 20px;
+        padding: 0 33px;
+    }
+    /* La section de la category */
+
+    .category{
+        width: 666px;
+        height: 222px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        margin-top: 88px;
+        margin-left: 40px;
+        font-size: 20px;
+        padding: 0 33px;
+    }
+    /* La section du profil */
+    .profil{
+        width: 666px;
+        height: 222px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        margin-top: 88px;
+        margin-left: 40px;
+        padding: 0 33px;
+        text-align: center;
+    }
+
+    .profil>span>a{
+        font-size: 77px;
+        margin: 22px;
+    }
+
+    .fa-solid {
+        color: rgb(88, 201, 246);
+        font-size: 35px;
+    }
+    /* La section du firstSection*/
+    .firstSection{
+        display: flex;
+    }
+
+    /* La section du secondSection*/
+    .secondSection{
+        display: flex;
+    }
